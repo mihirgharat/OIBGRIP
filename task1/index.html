@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<style>
+	.footer1{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: green;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.icons1{
+    padding-top: 1rem;
+}
+
+.icons a{
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: #f4f4f4;
+}
+
+.company-name1{
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+}    
+
+@media(min-width: 501px) and (max-width: 768px){
+    html{
+    font-size: 50%;
+    }
+}    
+</style>
+<body>
+<header id='header1'>
+  <nav>
+    <ul class='navbar1'>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">ITENARY</a></li>
+      <li><a href="#">ABOUT US</a></li>
+    </ul>
+  </nav>
+  <a href="#" class="sign-in">
+    <button class="btn-contact">Sign in</button>
+  </a>
+</header>
+  <div class=" flex-r container">
+    <center><h1>WELCOME TO ABC RESTAURANT</h1>
+    <div class="flex-r login-wrapper">
+      <div class="login-text">
+        <div class="logo1">
+          <span><i class="fab fa-speakap"></i></span>
+          <span>ADMIN LOGIN</span>
+        </div>
+
+        <form class="flex-c">
+          <div class="input-box">
+            <span class="label">USERNAME</span>
+            <div class=" flex-r input">
+              <input type="text" placeholder="username" name="adminname">
+              <i class="fas fa-at"></i>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <span class="label">Password</span>
+            <div class="flex-r input">
+              <input type="password" placeholder="password" name="password">
+              <i class="fas fa-lock"></i>
+            </div>
+          </div>
+          <input class="btn" type="submit" value="Login">
+        </form>
+
+      </div>
+    </div>
+  </div>
+</center>
+  <footer class="footer1">
+        <div class="icons1">
+           <a href="#"><i class="fab fa-facebook"></i></a>
+           <a href="#"><i class="fab fa-linkedin"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+            <p class="company-name">
+                MIHIR GHARAT&copy; 2022,
+            </p>
+        </div>
+    </footer>
+</body>
