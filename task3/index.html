@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="style.css">
+<style>
+  ::-ms-input-placeholder{
+    color: azure;
+  }
+</style>
+<script>
+    function result() {
+ 		var t=0;
+         var m=parseInt(document.getElementById('te').value);
+         if(!Number.isInteger(m)){
+           alert("ENTER A NUMBER PLEASE")
+         }
+    else{
+ 		if(document.getElementById('r1').checked) {
+ 			t=(m-32)*(5/9);
+             document.getElementById("x").innerHTML="TEMPERATURE IN DEGREE FARHENITE:"+Math.floor(t);
+
+ 		}
+ 		if(document.getElementById('r2').checked) {
+            t=((9/5)*m)+32;
+            document.getElementById("x").innerHTML="TEMPERATURE IN DEGREE CELSIUS:"+Math.floor(t);
+
+ 		}
+  }
+    }
+</script>
+<body>
+    <center style="color: white;"><h1>TEMPERATURE CONVERTER</h1>
+<div class="login">
+    <br>
+    <div class="form">
+      <form class="login-form">
+        Hello, <br> Enter Temperature value:<br><br><br>
+        <input type="text" id="te" required ><br>
+        <table cellspacing="30px">
+            <th></th>
+            <tr style="color: white;">
+                <td>TO CELSIUS <input type="radio" id="r1" name="temp" value="CELSIUS" style="color: white;"></td>
+                <td>TO FARHENITE
+                <input type="radio" id="r2" name="temp" value="FARHENITE" style="color: white;"></td> 
+            </tr>
+        </table>
+        <p id="x"></p><br>
+        <input type="button" style="font-family: 'Comfortaa', cursive;
+        text-transform: uppercase;
+        outline: 0;
+        background:rgb(12, 41, 105) ;
+        width: 100%;
+        border: 3px solid white;
+        border-radius: 5px;
+        padding: 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;" onclick="result()" value="CONVERT"/>
+      </form>  
+</div>
+</center>
+</body>
