@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+
+body {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgb(19, 19, 235),rgb(2, 2, 29));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.login {
+  margin-top: 1%;
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+  font-family: 'Comfortaa', cursive;
+}
+
+.form {
+  margin-top: 1%;
+  position: center;
+  z-index: 1;
+  background: rgb(12, 41, 105);
+  border-radius: 10px;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: left;
+  color:white;
+  height: 450px
+}
+
+.form input {
+  outline: 0;
+  background: rgb(229, 230, 233);
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  border-bottom-color: skyblue;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.form input:focus {
+  background: #dbdbdb;
+}
+
+.form a {
+  font-family: 'Comfortaa', cursive;
+  text-transform: uppercase;
+  outline: 0;
+  background:rgb(12, 41, 105) ;
+  width: 100%;
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form button:active {
+  background: #395591;
+}
+
+.form span {
+  font-size: 75px;
+  color: #4b6cb7;
+}
